@@ -1,0 +1,131 @@
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+[bar/top]
+enable-ipc = true
+;monitor = ${env:MONITOR:eDP1}
+width = 100%
+height = 30
+fixed-center = true
+
+background = ${xrdb:background}
+foreground = ${xrdb:foreground}
+
+line-color = ${xrdb:background}
+underline-size = 1
+overline-size = 2
+
+spacing = 0
+padding-left = 1
+padding-right = 1
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = Source Code Pro:pixelsize=9;1
+font-1 = Wuncon Siji:pixelsize=10;1
+font-2 = unifont:size=6;1
+
+modules-left = bspwm
+modules-center = date
+modules-right = 
+
+tray-position = right
+tray-padding = 10
+tray-maxsize = 16
+tray-detached = true
+
+wm-restack = bspwm
+
+scroll-up = bspwm-deskprev
+scroll-down = bspwm-desknext
+
+bspwm-focused-overline = ${xrdb:background}
+bspwm-focused-underline = ${xrdb:background}
+
+[module/bspwm]
+type = internal/bspwm
+enable-scroll = false
+format = <label-state> <label-mode>
+
+ws-icon-default = x
+inline-mode = true
+
+label-focused = o 
+label-focused-background = ${xrdb:background}
+label-focused-foreground = ${xrdb:foreground}
+label-focused-overline = ${root.bspwm-focused-overline}
+label-focused-underline = ${root.bspwm-focused-underline}
+label-focused-padding = 2
+
+label-occupied = %{O-1}*%{O-1}
+label-occupied-padding = 2
+
+label-urgent = !
+label-urgent-background = ${xrdb:color5}
+label-urgent-padding = 2
+
+label-empty = x
+label-empty-foreground = ${xrdb:background}
+label-empty-padding = 2
+
+label-monocle = monocle
+label-monocle-padding = 2
+label-monocle-background = ${xrdb:background}
+label-monocle-foreground = ${xrdb:color8}
+
+label-floating = floating
+label-floating-padding = 2
+label-floating-background = ${xrdb:background}
+label-floating-foreground = ${xrdb:color8}
+
+label-locked = locked
+label-locked-padding = 2
+label-locked-background = ${xrdb:background}
+label-locked-foreground = ${xrdb:color8}
+
+label-sticky = sticky
+label-sticky-padding = 2
+label-sticky-background = ${xrdb:background}
+label-sticky-foreground = ${xrdb:color8}
+
+label-private = private
+label-private-padding = 2
+label-private-background = ${xrdb:background}
+label-private-foreground = ${xrdb:color8}
+
+label-pseudotiled = pseudo
+label-pseudotiled-padding = 2
+label-pseudotiled-background = ${xrdb:background}
+label-pseudotiled-foreground = ${xrdb:color8}
+
+;label-tiled = tiled
+;label-tiled-padding = 2
+;label-tiled-background = ${xrdb:background}
+;label-tiled-foreground = ${xrdb:color8}
+
+label-dimmed-background = ${root.background}
+label-dimmed-overline = ${root.background}
+label-dimmed-underline = ${root.background}
+label-dimmed-active-foreground = #f00
+
+[module/date]
+type = internal/date
+date = %A, %d %B %Y   %H:%M
+time = %H:%M
+interval = 5
+
+[module/xwindow]
+type = internal/xwindow
+format = <label>
+label-maxlen = 75
+
+[module/counter]
+type = internal/counter
+format = <counter>
+interval = 0.1
+
+; vim:ft=dosini

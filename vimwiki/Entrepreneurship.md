@@ -1,0 +1,25 @@
+# Entrepreneurship
+
+- Web-based
+	- Tech Support Website and Forum
+	- Blog and Vlogging
+	- Advertising Schemes
+		- Adf.ly for paid hyperlinking
+- Program Based (Encrypt all)
+	- Outliner Program
+		- Workflowy Functions
+			- Zooms in and out
+			- Mind Maps Lists
+				- Zooms in and out
+			- Completed To-Do's with recent updated content highlighted green
+			- Completed Static To-Do's crossed out
+		- Functions Like Excel with Workflowy
+			- Color Coding for Cells
+			- Use Excel's library
+		- Sync Online
+		- Coded entirely on the serial code (to prevent piracy)
+	- B2B Menu Programs
+		- Job production based
+		- Make and use a common template
+	- User-friendly Graphing Program
+		- Base ideas most on IB and H.S. curriculums

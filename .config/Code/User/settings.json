@@ -1,0 +1,59 @@
+{
+    "editor.fontFamily": "Hasklig",
+    "terminal.integrated.fontFamily": "Source Code Variable",
+    "window.zoomLevel": 0,
+    "editor.wordWrap": "on",
+    "vim.neovimPath": "/usr/bin/nvim",
+    "files.associations": {
+        "*.inventory": "ansible-advanced"
+    },
+    "git.enableSmartCommit": true,
+    "explorer.confirmDragAndDrop": false,
+    "git.confirmSync": false,
+    "vim.hlsearch": true,
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "diffEditor.renderSideBySide": false,
+    "editor.fontLigatures": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "p",
+            ],
+            "after": [
+                "p",
+                "g",
+                "v",
+                "y"
+            ]
+        }
+    ],
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Monokai Pro (Filter Ristretto)",
+    "workbench.sideBar.location": "left",
+    "editor.fontWeight": "600",
+    "workbench.editor.showTabs": false,
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "window.titleBarStyle": "custom",
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "vetur.experimental.templateInterpolationService": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "breadcrumbs.enabled": true,
+    "vim.enableNeovim": true,
+    "vim.easymotion": true,
+    "vueDocs.lang": "en",
+    "vim.visualstar": true,
+    "vim.highlightedyank.enable": true
+}

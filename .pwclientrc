@@ -1,0 +1,12 @@
+# Sample .pwclientrc file for the patchwork project,
+# running on patchwork.ozlabs.org.
+#
+# Just append this file to your existing ~/.pwclientrc
+# If you do not already have a ~/.pwclientrc, then copy this file to
+# ~/.pwclientrc, and uncomment the following two lines:
+# [options]
+# default=patchwork
+
+[patchwork]
+url= https://patchwork.ozlabs.org/xmlrpc/
+

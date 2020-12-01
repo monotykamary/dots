@@ -1,0 +1,73 @@
+# {{{ env
+export SHELL=`which bash`
+export ANSIBLE_NOCOWS=1
+export ANSIBLE_STDOUT_CALLBACK=yaml
+# }}}
+# {{{ alias
+alias ps-rss="ps -eo pmem,comm,pid,maj_flt,min_flt,rss,vsz --sort -rss | numfmt --header --to=iec --field 4-5 | numfmt --header --from-unit=1024 --to=iec --field 6-7 | column -t | head"
+# }}}
+# {{{ func
+
+kubectl () {
+    if [[ "$1" == "project" ]]; then
+        command kubectl config set-context $(command kubectl config current-context) --namespace="${@:2}"
+    else
+        command kubectl "$@"
+    fi
+}
+
+kubeadm () {
+    if [[ "$@" == "kubeconfig" ]]; then
+        mkdir -p "$HOME/.kube"
+        sudo cp -i "/etc/kubernetes/admin.conf" "$HOME/.kube/config"
+        sudo chown $(id -u):$(id -g) "$HOME/.kube/config"
+    else
+        command kubeadm "$@"
+    fi
+}
+
+cll() {
+    if ! [ -z "$1" ]; then
+        ls -laZ --color "$1" | awk '{k=0;for(i=0;i<=8;i++)k+=((substr($1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf("%0o ",k);print}'
+    else
+        ls -laZ --color | awk '{k=0;for(i=0;i<=8;i++)k+=((substr($1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf("%0o ",k);print}'
+    fi
+}
+
+seaudit() {
+    sudo audit2allow -b
+}
+
+secreate() {
+    sudo audit2allow -b -m "$1" | vi -
+}
+
+seinstall() {
+    rm -f "$1".mod "$1".pp
+    checkmodule -M -m -o "$1".mod "$1".te
+    semodule_package -o "$1".pp -m "$1".mod
+    sudo semodule -i "$1".pp
+}
+
+tmuxrc() {
+    local TMUXDIR=/tmp/russelltmuxserver
+    if ! [ -d $TMUXDIR ]; then
+        rm -rf $TMUXDIR
+        mkdir -p $TMUXDIR
+    fi
+    rm -rf $TMUXDIR/.sshrc.d
+    cp -r $SSHHOME/.sshrc $SSHHOME/bashsshrc $SSHHOME/sshrc $SSHHOME/.sshrc.d $TMUXDIR
+    SSHHOME=$TMUXDIR SHELL=$TMUXDIR/bashsshrc /usr/bin/tmux -S $TMUXDIR/tmuxserver $@
+}
+
+lip () {
+    # Mnemonic: Local IP.
+    ip -br -c a
+}
+
+xip () {
+    # Mnemonic: eXternal IP.
+    echo "External IP Addresses"
+    dig +short myip.opendns.com @resolver1.opendns.com
+}
+# }}}

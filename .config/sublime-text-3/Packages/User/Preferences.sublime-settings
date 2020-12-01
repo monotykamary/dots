@@ -1,0 +1,17 @@
+{
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
+	"font_face": "Source Code Pro",
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Six",
+		"Vintage",
+		"Vintageous"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"theme": "Spacegray Eighties.sublime-theme",
+	"word_wrap": true
+}

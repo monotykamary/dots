@@ -1,0 +1,70 @@
+.Xmodmap
+.Xresources
+.anyrc
+.bash_profile
+.bashrc
+.config/Code/User/keybindings.json
+.config/Code/User/settings.json
+.config/bspwm/bspwmrc
+.config/gtk-3.0/bookmarks
+.config/gtk-3.0/gtk.css
+.config/i3/config
+.config/i3/i3status.conf
+.config/mimeapps.list
+.config/networkmanager-dmenu/config.ini
+.config/nvim/init.vim
+.config/polybar/config
+.config/ranger/commands.py
+.config/ranger/commands_full.py
+.config/ranger/rc.conf
+.config/ranger/rifle.conf
+.config/ranger/scope.sh
+.config/ranger/tagged
+.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap
+.config/sublime-text-3/Packages/User/Package Control.sublime-settings
+.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+.config/sway/config
+.config/sxhkd/sxhkdrc
+.config/tint3/tint3rc
+.ctags
+.dotfiles
+.dots/bootstrap
+.dots/vault.yaml
+.gitattributes
+.gitignore
+.gitmodules
+.icons/default/index.theme
+.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/csgo/cfg/autoexec.cfg
+.local/share/Steam/steamapps/common/insurgency2/insurgency/cfg/autoexec.cfg
+.nvidia-xinitrc
+.profile
+.pwclientrc
+.tmux.conf
+.xinitrc
+.zshrc
+README.md
+dotbackups/10-monitor.conf
+dotbackups/10-nvidia-drm-outputclass.conf
+dotbackups/50-mouse-acceleration.conf
+dotbackups/80-touchpad.conf
+dotbackups/99-udisks2.rules
+dotbackups/display-setup.sh
+dotbackups/gnome/desktop.wm.keybindings
+dotbackups/gnome/shell.keybindings
+dotbackups/xorg_intel.conf
+dotbackups/xorg_nvidia.conf
+dotscripts/iptable-reset.sh
+dotscripts/lock.sh
+dotscripts/nvidia-max-performance.sh
+dotscripts/pip-update.py
+dotscripts/sysctl/custom.conf
+dotscripts/sysctl/default.conf
+dotscripts/sysctl/xanmod.conf
+dotscripts/sysctl/zen.conf
+dotscripts/toggle-horizontal-scrolling.sh
+vimwiki/Budget Excel.md
+vimwiki/Coffee Alternatives.md
+vimwiki/Entrepreneurship.md
+vimwiki/Planning for Trips.md
+vimwiki/Thoughts.md
+vimwiki/index.md

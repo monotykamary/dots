@@ -1,0 +1,17 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Dockerfile Syntax Highlighting",
+		"Emmet",
+		"FindKeyConflicts",
+		"Hide Menu",
+		"NeoVintageous",
+		"Package Control",
+		"PKGBUILD",
+		"Theme - Spacegray"
+	]
+}
